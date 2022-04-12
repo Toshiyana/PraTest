@@ -48,6 +48,4 @@ class SignupFormModelValidator: SignupModelValidatorProtocol {
     func doPasswordsMatch(password: String, repeatPassword: String) -> Bool {
         return password == repeatPassword
     }
-    
-    
 }

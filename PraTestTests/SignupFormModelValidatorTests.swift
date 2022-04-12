@@ -139,5 +139,4 @@ class SignupFormModelValidatorTests: XCTestCase {
         // Assert
         XCTAssertFalse(doPasswordsMatch, "The doPasswordsMatch() should have returned FALSE for passwords that do not match but it has returned TRUE")
     }
-    
 }
