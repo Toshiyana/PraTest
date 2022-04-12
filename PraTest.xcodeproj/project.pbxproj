@@ -15,6 +15,8 @@
 		996A1B71280544B5005731E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996A1B6F280544B5005731E7 /* LaunchScreen.storyboard */; };
 		996A1B87280545C5005731E7 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1B86280545C4005731E7 /* SignupFormModelValidator.swift */; };
 		996A1B8928054648005731E7 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1B8828054648005731E7 /* SignupFormModelValidatorTests.swift */; };
+		996A1B8E2805540C005731E7 /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1B8D2805540C005731E7 /* SignupModelValidatorProtocol.swift */; };
+		996A1B9128055CCB005731E7 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1B9028055CCB005731E7 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		996A1B7C28054514005731E7 /* PraTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PraTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		996A1B86280545C4005731E7 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 		996A1B8828054648005731E7 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		996A1B8D2805540C005731E7 /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
+		996A1B9028055CCB005731E7 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +84,13 @@
 		996A1B63280544B2005731E7 /* PraTest */ = {
 			isa = PBXGroup;
 			children = (
+				996A1B8A28055395005731E7 /* Signup */,
 				996A1B64280544B2005731E7 /* AppDelegate.swift */,
 				996A1B66280544B2005731E7 /* SceneDelegate.swift */,
-				996A1B68280544B2005731E7 /* ViewController.swift */,
 				996A1B6A280544B2005731E7 /* Main.storyboard */,
 				996A1B6D280544B5005731E7 /* Assets.xcassets */,
 				996A1B6F280544B5005731E7 /* LaunchScreen.storyboard */,
 				996A1B72280544B5005731E7 /* Info.plist */,
-				996A1B86280545C4005731E7 /* SignupFormModelValidator.swift */,
 			);
 			path = PraTest;
 			sourceTree = "<group>";
@@ -98,6 +101,41 @@
 				996A1B8828054648005731E7 /* SignupFormModelValidatorTests.swift */,
 			);
 			path = PraTestTests;
+			sourceTree = "<group>";
+		};
+		996A1B8A28055395005731E7 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				996A1B8F280558F3005731E7 /* Controllers */,
+				996A1B8B280553A2005731E7 /* Protocol */,
+				996A1B8C280553AD005731E7 /* Model */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		996A1B8B280553A2005731E7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				996A1B8D2805540C005731E7 /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		996A1B8C280553AD005731E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				996A1B9028055CCB005731E7 /* SignupConstants.swift */,
+				996A1B86280545C4005731E7 /* SignupFormModelValidator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		996A1B8F280558F3005731E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				996A1B68280544B2005731E7 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +243,9 @@
 				996A1B69280544B2005731E7 /* ViewController.swift in Sources */,
 				996A1B65280544B2005731E7 /* AppDelegate.swift in Sources */,
 				996A1B87280545C5005731E7 /* SignupFormModelValidator.swift in Sources */,
+				996A1B9128055CCB005731E7 /* SignupConstants.swift in Sources */,
 				996A1B67280544B2005731E7 /* SceneDelegate.swift in Sources */,
+				996A1B8E2805540C005731E7 /* SignupModelValidatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
