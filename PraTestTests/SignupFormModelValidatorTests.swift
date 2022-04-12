@@ -10,7 +10,7 @@ import XCTest
 class SignupFormModelValidatorTests: XCTestCase {
 
     override func setUp() {
-        // setup1
+        // setup2
     }
 
 }
