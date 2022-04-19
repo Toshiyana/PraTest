@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import PraTest
 
 class SignupPresenterTests: XCTestCase {
 
@@ -19,7 +20,11 @@ class SignupPresenterTests: XCTestCase {
     
     func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         // Arrange
-        
+        let signupFormModel = SignupFormModel(firstName: "Sergey",
+                                              lastName: "Kargopolov",
+                                              email: "test@test.com",
+                                              password:"12345678",
+                                              repeatPassword:"12345678")
         // Act
         
         // Assert

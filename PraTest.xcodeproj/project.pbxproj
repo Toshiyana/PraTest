@@ -25,6 +25,7 @@
 		996A1BA1280BFD60005731E7 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA0280BFD60005731E7 /* SignupWebServiceTests.swift */; };
 		996A1BA3280C00D5005731E7 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */; };
 		996A1BA5280E441F005731E7 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */; };
+		996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA6280E4588005731E7 /* SignupFormModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		996A1BA0280BFD60005731E7 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
+		996A1BA6280E4588005731E7 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				996A1B9028055CCB005731E7 /* SignupConstants.swift */,
+				996A1B9928056C0F005731E7 /* SignupError.swift */,
 				996A1B86280545C4005731E7 /* SignupFormModelValidator.swift */,
 				996A1B9728056BE1005731E7 /* SignupFormRequestModel.swift */,
 				996A1B9528056AF0005731E7 /* SignupResponseModel.swift */,
-				996A1B9928056C0F005731E7 /* SignupError.swift */,
+				996A1BA6280E4588005731E7 /* SignupFormModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				996A1B9428056A79005731E7 /* SignupWebService.swift in Sources */,
 				996A1B9628056AF0005731E7 /* SignupResponseModel.swift in Sources */,
 				996A1B65280544B2005731E7 /* AppDelegate.swift in Sources */,
+				996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */,
 				996A1B87280545C5005731E7 /* SignupFormModelValidator.swift in Sources */,
 				996A1B9128055CCB005731E7 /* SignupConstants.swift in Sources */,
 				996A1B67280544B2005731E7 /* SceneDelegate.swift in Sources */,
