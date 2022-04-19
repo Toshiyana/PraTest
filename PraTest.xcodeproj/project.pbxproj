@@ -26,6 +26,7 @@
 		996A1BA3280C00D5005731E7 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */; };
 		996A1BA5280E441F005731E7 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */; };
 		996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA6280E4588005731E7 /* SignupFormModel.swift */; };
+		996A1BA9280EC131005731E7 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA8280EC131005731E7 /* SignupPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		996A1BA6280E4588005731E7 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
+		996A1BA8280EC131005731E7 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				996A1B8F280558F3005731E7 /* Controllers */,
 				996A1B8B280553A2005731E7 /* Protocol */,
 				996A1B8C280553AD005731E7 /* Model */,
+				996A1BA8280EC131005731E7 /* SignupPresenter.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				996A1B9628056AF0005731E7 /* SignupResponseModel.swift in Sources */,
 				996A1B65280544B2005731E7 /* AppDelegate.swift in Sources */,
 				996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */,
+				996A1BA9280EC131005731E7 /* SignupPresenter.swift in Sources */,
 				996A1B87280545C5005731E7 /* SignupFormModelValidator.swift in Sources */,
 				996A1B9128055CCB005731E7 /* SignupConstants.swift in Sources */,
 				996A1B67280544B2005731E7 /* SceneDelegate.swift in Sources */,
