@@ -27,6 +27,7 @@
 		996A1BA5280E441F005731E7 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */; };
 		996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA6280E4588005731E7 /* SignupFormModel.swift */; };
 		996A1BA9280EC131005731E7 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA8280EC131005731E7 /* SignupPresenter.swift */; };
+		996A1BAB280EC587005731E7 /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		996A1BA6280E4588005731E7 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		996A1BA8280EC131005731E7 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				996A1B9E280BF8BC005731E7 /* Network */,
 				996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */,
 				996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */,
+				996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				996A1BA3280C00D5005731E7 /* MockURLProtocol.swift in Sources */,
 				996A1BA1280BFD60005731E7 /* SignupWebServiceTests.swift in Sources */,
 				996A1BA5280E441F005731E7 /* SignupPresenterTests.swift in Sources */,
+				996A1BAB280EC587005731E7 /* MockSignupModelValidator.swift in Sources */,
 				996A1B8928054648005731E7 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
