@@ -28,6 +28,7 @@
 		996A1BA7280E4588005731E7 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA6280E4588005731E7 /* SignupFormModel.swift */; };
 		996A1BA9280EC131005731E7 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BA8280EC131005731E7 /* SignupPresenter.swift */; };
 		996A1BAB280EC587005731E7 /* MockSignupModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */; };
+		996A1BB0280FEE3F005731E7 /* MockSignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BAF280FEE3F005731E7 /* MockSignupWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		996A1BA6280E4588005731E7 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		996A1BA8280EC131005731E7 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
 		996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupModelValidator.swift; sourceTree = "<group>"; };
+		996A1BAF280FEE3F005731E7 /* MockSignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			children = (
 				996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */,
 				996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */,
+				996A1BAF280FEE3F005731E7 /* MockSignupWebService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996A1BB0280FEE3F005731E7 /* MockSignupWebService.swift in Sources */,
 				996A1BA3280C00D5005731E7 /* MockURLProtocol.swift in Sources */,
 				996A1BA1280BFD60005731E7 /* SignupWebServiceTests.swift in Sources */,
 				996A1BA5280E441F005731E7 /* SignupPresenterTests.swift in Sources */,

@@ -41,4 +41,22 @@ class SignupPresenterTests: XCTestCase {
         XCTAssertTrue(mockSignupModelValidator.isPasswordEqualityValidated, "Did not validate if passwords match")
     }
 
+    func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() {
+        // Arrange
+        let signupFormModel = SignupFormModel(firstName: "Sergey",
+                                              lastName: "Kargopolov",
+                                              email: "test@test.com",
+                                              password:"12345678",
+                                              repeatPassword:"12345678")
+        
+        let mockSignupModelValidator = MockSignupModelValidator()
+        let mockSignupWebService = MockSignupWebService()
+        
+        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
+        
+        // Act
+        sut.processUserSignup(formModel: signupFormModel)
+        
+        // Assert
+    }
 }
