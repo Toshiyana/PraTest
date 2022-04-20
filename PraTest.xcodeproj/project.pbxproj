@@ -128,9 +128,10 @@
 		996A1B8A28055395005731E7 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				996A1BAC280FEAEB005731E7 /* Presenters */,
+				996A1B8B280553A2005731E7 /* Protocol */,
 				996A1B9228056A5C005731E7 /* Network */,
 				996A1B8F280558F3005731E7 /* Controllers */,
-				996A1B8B280553A2005731E7 /* Protocol */,
 				996A1B8C280553AD005731E7 /* Model */,
 				996A1BA8280EC131005731E7 /* SignupPresenter.swift */,
 			);
@@ -178,11 +179,10 @@
 		996A1B9D280BF8B1005731E7 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				996A1BAE280FEB1A005731E7 /* Mocks */,
+				996A1BAD280FEB08005731E7 /* Presenters */,
 				996A1B9F280BF8C6005731E7 /* Model */,
 				996A1B9E280BF8BC005731E7 /* Network */,
-				996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */,
-				996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */,
-				996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -201,6 +201,30 @@
 				996A1B8828054648005731E7 /* SignupFormModelValidatorTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		996A1BAC280FEAEB005731E7 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		996A1BAD280FEB08005731E7 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				996A1BA4280E441F005731E7 /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		996A1BAE280FEB1A005731E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				996A1BA2280C00D5005731E7 /* MockURLProtocol.swift */,
+				996A1BAA280EC587005731E7 /* MockSignupModelValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
