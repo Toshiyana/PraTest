@@ -9,4 +9,6 @@ import Foundation
 
 class MockSignupWebService {
     
+    var isSignupMethodCalled: Bool = false
+    
 }

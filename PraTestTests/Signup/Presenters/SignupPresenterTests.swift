@@ -58,5 +58,6 @@ class SignupPresenterTests: XCTestCase {
         sut.processUserSignup(formModel: signupFormModel)
         
         // Assert
+        XCTAssertTrue(mockSignupWebService.isSignupMethodCalled, "The signup() method was not called in the SignupWebService class")
     }
 }
