@@ -9,26 +9,35 @@ import XCTest
 @testable import PraTest
 
 class SignupPresenterTests: XCTestCase {
+    
+    var signupFormModel: SignupFormModel!
+    var mockSignupModelValidator: MockSignupModelValidator!
+    var mockSignupWebService: MockSignupWebService!
+    var sut: SignupPresenter!
 
     override func setUp() {
         
-    }
-    
-    override func tearDown() {
-        
-    }
-    
-    func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         // Arrange
-        let signupFormModel = SignupFormModel(firstName: "Sergey",
+        signupFormModel = SignupFormModel(firstName: "Sergey",
                                               lastName: "Kargopolov",
                                               email: "test@test.com",
                                               password:"12345678",
                                               repeatPassword:"12345678")
         
-        let mockSignupModelValidator = MockSignupModelValidator()
+        mockSignupModelValidator = MockSignupModelValidator()
+        mockSignupWebService = MockSignupWebService()
         
-        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
+        sut = SignupPresenter(formModelValidator: mockSignupModelValidator, webService: mockSignupWebService)
+    }
+    
+    override func tearDown() {
+        signupFormModel = nil
+        mockSignupModelValidator = nil
+        mockSignupWebService = nil
+        sut = nil
+    }
+    
+    func testSignupPresenter_WhenInformationProvided_WillValidateEachProperty() {
         
         // Act
         sut.processUserSignup(formModel: signupFormModel)
@@ -42,18 +51,7 @@ class SignupPresenterTests: XCTestCase {
     }
 
     func testSignupPresenter_WhenGivenValidFormModel_ShouldCallSignupMethod() {
-        // Arrange
-        let signupFormModel = SignupFormModel(firstName: "Sergey",
-                                              lastName: "Kargopolov",
-                                              email: "test@test.com",
-                                              password:"12345678",
-                                              repeatPassword:"12345678")
-        
-        let mockSignupModelValidator = MockSignupModelValidator()
-        let mockSignupWebService = MockSignupWebService()
-        
-        let sut = SignupPresenter(formModelValidator: mockSignupModelValidator)
-        
+
         // Act
         sut.processUserSignup(formModel: signupFormModel)
         

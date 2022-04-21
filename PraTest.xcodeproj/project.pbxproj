@@ -135,7 +135,6 @@
 				996A1B9228056A5C005731E7 /* Network */,
 				996A1B8F280558F3005731E7 /* Controllers */,
 				996A1B8C280553AD005731E7 /* Model */,
-				996A1BA8280EC131005731E7 /* SignupPresenter.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -208,6 +207,7 @@
 		996A1BAC280FEAEB005731E7 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				996A1BA8280EC131005731E7 /* SignupPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
