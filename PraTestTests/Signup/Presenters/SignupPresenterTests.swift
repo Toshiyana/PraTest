@@ -74,5 +74,6 @@ class SignupPresenterTests: XCTestCase {
         self.wait(for: [myExpectation], timeout: 5)
         
         // Assert
+        XCTAssertEqual(mockSignupViewDelegate.successfullSignupCounter, 1)
     }
 }
