@@ -37,4 +37,16 @@ class SignupViewControllerTests: XCTestCase {
         XCTAssertEqual(passwordTextField.text, "", "Password text field was not empty when the view controller initially loaded")
         XCTAssertEqual(repeatPasswordTextField.text, "", "Repeat password text field was not empty when the view controller initially loaded")
     }
+    
+    func testSignupViewController_WhenCreated_HasSignupButtonAndAction() throws {
+        // Arrange
+        let signupButton: UIButton = try XCTUnwrap(sut.signupButton, "The signupButton is not connected to an IBOutlet")
+        
+        // Act
+        let signupButtonActions = try XCTUnwrap(signupButton.actions(forTarget: sut, forControlEvent: .touchUpInside), "Signup Button does not have any actions assigned to it")
+        
+        // Assert
+        XCTAssertEqual(signupButtonActions.count, 1)
+        XCTAssertEqual(signupButtonActions.first, "signupButtonTapped:", "There is no action with a name signupButtonTapped assigned to signup button")
+    }
 }
