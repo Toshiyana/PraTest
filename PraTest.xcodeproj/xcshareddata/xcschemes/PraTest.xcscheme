@@ -39,6 +39,16 @@
                ReferencedContainer = "container:PraTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "996A1C41281ED160005731E7"
+               BuildableName = "PraTestUITests.xctest"
+               BlueprintName = "PraTestUITests"
+               ReferencedContainer = "container:PraTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
