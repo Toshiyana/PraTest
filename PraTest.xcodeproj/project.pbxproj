@@ -34,7 +34,7 @@
 		996A1BB928158007005731E7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BB828158007005731E7 /* SignupViewController.swift */; };
 		996A1BBB28167555005731E7 /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BBA28167555005731E7 /* SignupPresenterProtocol.swift */; };
 		996A1BBD28167AA9005731E7 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1BBC28167AA9005731E7 /* MockSignupPresenter.swift */; };
-		996A1C45281ED160005731E7 /* PraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1C44281ED160005731E7 /* PraTestUITests.swift */; };
+		996A1C45281ED160005731E7 /* SignupFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1C44281ED160005731E7 /* SignupFlowUITests.swift */; };
 		996A1C47281ED160005731E7 /* PraTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1C46281ED160005731E7 /* PraTestUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,7 @@
 		996A1BBA28167555005731E7 /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		996A1BBC28167AA9005731E7 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		996A1C42281ED160005731E7 /* PraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		996A1C44281ED160005731E7 /* PraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraTestUITests.swift; sourceTree = "<group>"; };
+		996A1C44281ED160005731E7 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		996A1C46281ED160005731E7 /* PraTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,7 +277,7 @@
 		996A1C43281ED160005731E7 /* PraTestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				996A1C44281ED160005731E7 /* PraTestUITests.swift */,
+				996A1C44281ED160005731E7 /* SignupFlowUITests.swift */,
 				996A1C46281ED160005731E7 /* PraTestUITestsLaunchTests.swift */,
 			);
 			path = PraTestUITests;
@@ -454,7 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996A1C47281ED160005731E7 /* PraTestUITestsLaunchTests.swift in Sources */,
-				996A1C45281ED160005731E7 /* PraTestUITests.swift in Sources */,
+				996A1C45281ED160005731E7 /* SignupFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
