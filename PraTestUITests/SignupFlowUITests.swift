@@ -22,7 +22,7 @@ class SignupFlowUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testSignupViewController_WhenViewLoaded_RequiredUIElementsAreEnabled() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -40,23 +40,28 @@ class SignupFlowUITests: XCTestCase {
 //        app/*@START_MENU_TOKEN@*/.staticTexts["Sign Up"]/*[[".buttons[\"Sign Up\"].staticTexts[\"Sign Up\"]",".staticTexts[\"Sign Up\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
         // textFieldにPlaceholderを設定してRecordした場合
-        app.textFields["First Name"].tap()
-        app.textFields["Last Name"].tap()
-        app.textFields["Email"].tap()
-        app.textFields["Password"].tap()
-        app.textFields["Repeat Password"].tap()
-        app.buttons["Sign Up"].tap()
+        // tapを除去し、以下のように記述するのがbetterな方法
+        let firstName = app.textFields["First Name"]
+        let lastName = app.textFields["Last Name"]
+        let email = app.textFields["Email"]
+        let password = app.secureTextFields["Password"]
+        let repeatPassword = app.secureTextFields["Repeat Password"]
+        let signupButton = app.buttons["Sign Up"]
                 
-                
-        
+        XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions")
+        XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions")
+        XCTAssertTrue(email.isEnabled, "Email address UITextField is not enabled for user interactions")
+        XCTAssertTrue(password.isEnabled, "Password UITextField is not enabled for user interactions")
+        XCTAssertTrue(repeatPassword.isEnabled, "Repeat password UITextField is not enabled for user interactions")
+        XCTAssertTrue(signupButton.isEnabled, "Signup button UITextField is not enabled for user interactions")
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() throws {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTApplicationLaunchMetric()]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }
