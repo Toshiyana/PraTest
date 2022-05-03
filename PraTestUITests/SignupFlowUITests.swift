@@ -87,7 +87,8 @@ class SignupFlowUITests: XCTestCase {
         signupButton.tap()
         
         // Assert
-        XCTAssertTrue(app.alerts["errorAlertDialog"].waitForExistence(timeout: 1), "An Error Alert dialog was not presented when invalid signup form was submitted")
+        XCTAssertTrue(app.alerts["errorAlertDialog"].waitForExistence(timeout: 1),
+                      "An Error Alert dialog was not presented when invalid signup form was submitted")
     }
 
 //    func testLaunchPerformance() throws {
