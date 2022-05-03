@@ -39,14 +39,14 @@ class SignupFlowUITests: XCTestCase {
 //        element.children(matching: .textField).element(boundBy: 4).tap()
 //        app/*@START_MENU_TOKEN@*/.staticTexts["Sign Up"]/*[[".buttons[\"Sign Up\"].staticTexts[\"Sign Up\"]",".staticTexts[\"Sign Up\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
-        // textFieldにPlaceholderを設定してRecordした場合
+        // textFieldにPlaceholderを設定してRecordした場合(placeholderでなく、identifierでも指定可能)
         // tapを除去し、以下のように記述するのがbetterな方法
-        let firstName = app.textFields["First Name"]
-        let lastName = app.textFields["Last Name"]
-        let email = app.textFields["Email"]
-        let password = app.secureTextFields["Password"]
-        let repeatPassword = app.secureTextFields["Repeat Password"]
-        let signupButton = app.buttons["Sign Up"]
+        let firstName = app.textFields["firstNameTextField"]
+        let lastName = app.textFields["lastNameTextField"]
+        let email = app.textFields["emailTextField"]
+        let password = app.secureTextFields["passwordTextField"]
+        let repeatPassword = app.secureTextFields["repeatPasswordTextField"]
+        let signupButton = app.buttons["signupButton"]
                 
         XCTAssertTrue(firstName.isEnabled, "First name UITextField is not enabled for user interactions")
         XCTAssertTrue(lastName.isEnabled, "Last name UITextField is not enabled for user interactions")
