@@ -1,0 +1,52 @@
+{
+  "configurations" : [
+    {
+      "id" : "94EE768E-C705-4D32-8B31-70CFA797B0AE",
+      "name" : "Test Server 1 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupUrl",
+            "value" : "http:\/\/appsdeveloperblog.com\/api\/v2\/signup-mock-service\/users"
+          }
+        ]
+      }
+    },
+    {
+      "id" : "44DEE0A0-031F-424E-BD94-CB7C9737EF5B",
+      "name" : "Test Server 2 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupUrl",
+            "value" : "http:\/\/appsdeveloperblog.com:8080\/signup-mock-service\/users"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PraTest.xcodeproj",
+      "identifier" : "996A1B60280544B2005731E7",
+      "name" : "PraTest"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PraTest.xcodeproj",
+        "identifier" : "996A1B7B28054514005731E7",
+        "name" : "PraTestTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:PraTest.xcodeproj",
+        "identifier" : "996A1C41281ED160005731E7",
+        "name" : "PraTestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

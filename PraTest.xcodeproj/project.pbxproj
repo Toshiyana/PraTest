@@ -89,6 +89,7 @@
 		996A1C42281ED160005731E7 /* PraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		996A1C44281ED160005731E7 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
 		996A1C46281ED160005731E7 /* PraTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		996A1C4D28241860005731E7 /* PraTest-UITestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PraTest-UITestsPlan.xctestplan"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +278,7 @@
 		996A1C43281ED160005731E7 /* PraTestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				996A1C4D28241860005731E7 /* PraTest-UITestsPlan.xctestplan */,
 				996A1C44281ED160005731E7 /* SignupFlowUITests.swift */,
 				996A1C46281ED160005731E7 /* PraTestUITestsLaunchTests.swift */,
 			);
